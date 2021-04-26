@@ -1,4 +1,8 @@
 @import "normalize.css";
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
 @import "base/_variables.css";
 @import "base/_mixins.css";
 @import "base/_global";
+@import "modules/_navigation.css";
+@import "modules/_main-area.css";
+@import "modules/_portfolio.css";
