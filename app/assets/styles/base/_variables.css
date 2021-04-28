@@ -2,13 +2,13 @@ $sans-serif: "Raleway", sans-serif;
 $font-light: 300;
 $font_bold: 700;
 
-$black: #353535;
-$gray: #4f4f4f;
-$medium-gray: #737373;
-$light-gray: #c4c4c4;
-$orange: #f96855;
+$black: #393650;
+$gray: #544d94;
+$medium-gray: #8b90df;
+$light-gray: #b9bbd8;
+$blue: #333a77;
 
-$accent: $orange;
+$accent: $blue;
 $body-background: $black;
 $menu-background: $gray;
 $main-font-color: $light-gray;
