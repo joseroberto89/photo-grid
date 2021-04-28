@@ -3,20 +3,21 @@
   flex: 1 1 20%;
   min-width: 200px;
   padding: 3em;
+  padding-bottom: 0.5em;
 
-  @mixin atMedium {
-    margin-bottom: 3em;
+  @mixin atLarge {
+    background: $menu-background;
+    flex: 1 1 20%;
+    min-width: 200px;
+    padding: 3em;
+    padding-bottom: 0.5em;
   }
 }
 
 .logo {
   text-transform: uppercase;
   margin-bottom: 2em;
-  font-size: 0.8em;
-
-  @mixin atLarge {
-    margin-bottom: 5em;
-  }
+  font-size: 1em;
 
   span {
     font-weight: $font_bold;
@@ -26,15 +27,13 @@
 .nav-item {
   color: $menu-font-color;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: inline-block;
-  margin-right: 0.2em;
+  margin-right: 0.3em;
 
   @mixin atLarge {
     font-size: 1.7rem;
-    margin-right: 2em;
-    display: block;
-    margin: 7vh 0;
+    margin-right: 1rem;
   }
 
   &.active {

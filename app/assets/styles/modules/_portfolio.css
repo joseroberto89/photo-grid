@@ -4,16 +4,27 @@
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: $light-gray;
+    width: 100%;
+    height: 100%;
+    font-weight: $font_bold;
+    font-size: 0.8em;
+
+    &:hover {
+      color: white;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
+    }
+  }
 }
 
 .portfolio-item {
   background-color: $orange;
-  color: $light-gray;
-  font-weight: $font_bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
   background-size: cover;
   background-position: center;
   transition: all ease-in-out 300ms;
@@ -44,15 +55,10 @@
     grid-row: span 2;
     grid-column: span 3;
   }
-
-  &:hover {
-    color: white;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
-  }
 }
 
-.portfolio-img {
-  &--change::before {
+.port {
+  &::before {
     content: "";
     display: block;
     background: $black;
@@ -66,17 +72,39 @@
     z-index: -1;
   }
 
-  &--change:hover::before {
+  &:hover::before {
     opacity: 0.2;
   }
 
-  & img {
-    display: block;
-    opacity: 0.6;
-    transition: all ease-in-out 300ms;
+  &--1 {
+    background-image: url("./assets/images/bootstrap-site.jpg");
   }
 
-  & img:hover {
-    opacity: 1;
+  &--2 {
+    background-image: url("./assets/images/travel-site.jpg");
+  }
+
+  &--3 {
+    background-image: url("");
+  }
+
+  &--4 {
+    background-image: url("");
+  }
+
+  &--5 {
+    background-image: url("");
+  }
+
+  &--6 {
+    background-image: url("");
+  }
+
+  &--7 {
+    background-image: url("");
+  }
+
+  &--8 {
+    background-image: url("");
   }
 }
