@@ -25,15 +25,16 @@
 }
 
 .telephone {
+  padding-top: 20px;
   color: $medium-gray;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 1.8rem;
   text-align: center;
 }
 
 .email {
   color: $medium-gray;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 1.8rem;
   text-align: center;
 }

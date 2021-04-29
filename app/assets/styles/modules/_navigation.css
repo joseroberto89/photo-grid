@@ -18,6 +18,43 @@
   text-transform: uppercase;
   margin-bottom: 2em;
   font-size: 1em;
+  
+  &-img1 {
+    position: absolute;
+    z-index: 2;
+
+    &:hover, &:focus {
+     z-index: 1;
+      }
+
+    }
+
+  &-img2 {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+
+    &:hover, &:focus {
+     z-index: 2;
+     opacity: 1; 
+      }
+    }
+  
+  img{
+      max-height: 90px;
+      max-width: 90px;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+  @mixin atLarge {
+    img{
+      max-height: 120px;
+      max-width: 120px;
+      display: block;
+      margin-bottom: 1em;
+    }
+  }
 
   span {
     font-weight: $font_bold;
@@ -30,6 +67,7 @@
   font-size: 1.2rem;
   display: inline-block;
   margin-right: 0.3em;
+  
 
   @mixin atLarge {
     font-size: 1.7rem;
@@ -38,10 +76,12 @@
 
   &.active {
     color: $menu-active-color;
+    
   }
 
-  &:hover {
+  &:hover, &:focus {
     font-weight: $font_bold;
     transform: scale(1.2);
+    transition: all ease-in-out 300ms;
   }
 }
